@@ -5,7 +5,7 @@ for dir in $dirs
 do
   if [ -d "${dir}" ]; then
     echo "${dir}"
-    cd "${dir}" && make
-    cd ../
+    cd "${dir}/src" && make
+    cd ../../
   fi
 done
